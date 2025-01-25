@@ -19,3 +19,17 @@ console.log("Product Price: $" + productPrice + " - Variable Type: " + typeof(em
 var isAvailable = true;
 console.log("Is Product Available: " + isAvailable + " - Variable Type: " + typeof(isAvailable));
 
+// Task 3: Number Data Type
+// Scenario: Financial Transactions 
+console.log("********** Financial Transactions  **********");
+let accountBalance = 5000; 
+console.log("Initial Account Balance: $" + accountBalance + " - Variable Type: " + typeof(accountBalance));  
+// Perform arithmetic operations
+accountBalance += 1500;  // Deposit
+console.log("After Deposit: $" + accountBalance);
+accountBalance -= 2000;  // Withdrawal
+console.log("After Withdrawal: $" + accountBalance);
+accountBalance *= 1.05;  // Interest (5% increase)
+console.log("After Interest: $" + accountBalance);
+accountBalance /= 2;  // Split balance in half
+console.log("After Split: $" + accountBalance);
