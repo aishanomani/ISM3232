@@ -40,3 +40,16 @@ let customers = [
 customers.push({ name: "Miguel Diaz", email: "mdiaz@gmail.com", purchaseAmount: 400 });
 console.log("Customer List:", customers);
 
+// Task 5: Object Methods
+// Scenario: Order Processing System
+console.log("********** Order Processing System **********");
+let order = {
+    orderId: 107,
+    customerName: "Johnny Lawrence",
+    amount: 500,
+    calculateTax: function() {
+        return this.amount * 0.10;
+    }
+};
+console.log("Order Details:", order);
+console.log("Tax Amount:", order.calculateTax());
