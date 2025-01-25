@@ -33,3 +33,10 @@ accountBalance *= 1.05;  // Interest (5% increase)
 console.log("After Interest: $" + accountBalance);
 accountBalance /= 2;  // Split balance in half
 console.log("After Split: $" + accountBalance);
+
+// Task 4: String Data Type
+// Scenario: Customer Messaging
+console.log("********** Customer Messaging  **********");
+let customerName = "John Doe";
+let welcomeMessage = "Hello, " + customerName + "! Welcome to our platform.";
+console.log(welcomeMessage);
