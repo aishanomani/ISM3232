@@ -40,3 +40,17 @@ console.log("********** Customer Messaging  **********");
 let customerName = "John Doe";
 let welcomeMessage = "Hello, " + customerName + "! Welcome to our platform.";
 console.log(welcomeMessage);
+
+// Task 5: Boolean Data Type
+// Scenario: Access Control
+console.log("********** Access Control  **********");
+let isLoggedIn = true; // Change to false to simulate logged-out state
+console.log("User Logged In: " + isLoggedIn + " - Variable Type: " + typeof(isLoggedIn));
+// Logical operations to check access conditions
+let hasAdminRights = false;
+let canAccessDashboard = isLoggedIn && hasAdminRights;
+console.log("Can Access Admin Dashboard: " + canAccessDashboard);
+let canAccessReports = isLoggedIn || hasAdminRights;
+console.log("Can Access Reports: " + canAccessReports);
+let isRestricted = !isLoggedIn;
+console.log("Is Restricted Access: " + isRestricted);
