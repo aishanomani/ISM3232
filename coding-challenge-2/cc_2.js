@@ -28,3 +28,15 @@ let employee = {
 employee.department = "Marketing";
 employee.position = "Manager";
 console.log("Updated employee record:", employee);
+
+// Task 4: Array of Objects
+// Scenario: Customer Database
+console.log("********** Customer Database **********");
+let customers = [
+    { name: "Johnny Lawrence", email: "jlawrence@gmail.com", purchaseAmount: 250 },
+    { name: "Daniel Larusso", email: "dlarusso@gmail.com", purchaseAmount: 150 },
+    { name: "Tory Nichols", email: "tnichols@gmail.com", purchaseAmount: 300 }
+];
+customers.push({ name: "Miguel Diaz", email: "mdiaz@gmail.com", purchaseAmount: 400 });
+console.log("Customer List:", customers);
+
