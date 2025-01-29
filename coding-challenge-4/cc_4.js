@@ -28,3 +28,11 @@ while (stock > 0) {
 }
 console.log("Stock Depleted!");
 
+// Task 4: Do...While Loop
+// Scenario: Customer Survey
+console.log("********** Customer Survey **********");
+let responses = 0;
+do {
+  responses++;
+  console.log(`Responses collected: ${responses}`);
+} while (responses < 3);
