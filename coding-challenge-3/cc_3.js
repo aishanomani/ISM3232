@@ -38,3 +38,17 @@ const feedback = [
 ];
 feedback.push({ customerName: "Satabdee Purkayastha", feedbackText: "Excellent quality! Will definitely order again.", rating: 5 });
 console.log("Feedback List:", feedback);
+
+// Task 5: Inventory Management System 
+// Scenario: Stock Analysis
+console.log("********** Stock Analysis **********");
+const inventory = {
+    itemName: "Airpods",
+    stockCount: 75,
+    price: 200,
+    calculateTotalValue: function() {
+        return this.stockCount * this.price;
+    }
+};
+console.log("Inventory Details:", inventory);
+console.log("Total Inventory Value:", inventory.calculateTotalValue());
