@@ -36,3 +36,16 @@ do {
   responses++;
   console.log(`Responses collected: ${responses}`);
 } while (responses < 3);
+
+// Task 5: For...In Loop
+// Scenario: Employee Information
+console.log("********** Employee Information **********");
+let employee = {
+  name: "Alice",
+  position: "Manager",
+  salary: 75000
+};
+for (let key in employee) {
+  console.log(`${key}: ${employee[key]}`);
+}
+
