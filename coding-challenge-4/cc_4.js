@@ -7,3 +7,14 @@ if (purchaseAmount > 100) {
     let finalAmount = purchaseAmount - purchaseAmount * discount;
     console.log(`Final Amount After Discount: $${finalAmount}`);
 }
+
+// Task 2: For Loop
+// Scenario: Sales Report
+console.log("********** Sales Report **********");
+let sales = [175, 75, 215, 150, 90];
+let totalSales = 0;
+for (let sale of sales) {
+  totalSales += sale;
+}
+console.log(`Total Sales: $${totalSales}`);
+
