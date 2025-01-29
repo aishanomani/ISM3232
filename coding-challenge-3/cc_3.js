@@ -27,3 +27,14 @@ const employee = {
 employee.performanceScore = 99;
 employee.promotionEligible = true;
 console.log("Updated Employee Object:", employee);
+
+// Task 4: Customer Feedback Records
+// Scenario: Feedback Management
+console.log("********** Feedback Management **********");
+const feedback = [
+    { customerName: "Ishaan Goel", feedbackText: "Love the product! Very high quality.", rating: 5 },
+    { customerName: "Ambika Rao", feedbackText: "Quite satisfied with the product but it's a bit smaller than portrayed in the image.", rating: 4 },
+    { customerName: "Carlos Rangel", feedbackText: "Delayed delivery was extended by almost a week but I am impressed with the product.", rating: 3 },
+];
+feedback.push({ customerName: "Satabdee Purkayastha", feedbackText: "Excellent quality! Will definitely order again.", rating: 5 });
+console.log("Feedback List:", feedback);
