@@ -36,3 +36,10 @@ const prices = [100, 200, 300];
 const discountedPrices = prices.map(price => price * 0.9);
 console.log(discountedPrices);
 
+// Task 5: Filter Method
+// Scenario: Product Availability
+console.log("********** Product Availability **********");
+const inventory = [7, 0, 11, 0, 9];
+const availableProducts = inventory.filter(quantity => quantity > 0);
+console.log(availableProducts);
+
