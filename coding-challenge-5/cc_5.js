@@ -19,4 +19,13 @@ const order = {
   };
   order.displayOrder();
 
-  
+// Task 3: Array Manipulation (push, pop, shift, unshift)
+// Scenario: Shopping Cart
+console.log("********** Shopping Cart **********");
+let cartItems = ["PS5 Console", "PS5 Controller", "Microphone"];
+cartItems.push("Camera");
+cartItems.pop();
+cartItems.unshift("Speaker");
+cartItems.shift();
+console.log(cartItems);
+
