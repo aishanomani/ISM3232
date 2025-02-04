@@ -67,4 +67,14 @@ function calculateTax(amount, taxRate) {
   }
   calculateTax(1000, 6);
 
+// Task 9: Function Expression
+// Scenario: Discount Application
+console.log("********** Discount Application **********");
+const applyDiscount = function(price, discount) {
+    const discountedPrice = price - (price * (discount / 100));
+    console.log(`Price after ${discount}% discount: $${discountedPrice}`);
+    return discountedPrice;
+  };
+  applyDiscount(300, 10);
+
   
