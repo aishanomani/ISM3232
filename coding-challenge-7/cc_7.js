@@ -58,3 +58,18 @@ function filterHighValueTransactions(transactions, filterFunction) {
     return transactions.filter(filterFunction);
 }
 console.log(filterHighValueTransactions(transactions, amount => amount > 1000)); // [1200, 3000, 2200]
+
+// Task 7: Closures
+// Scenario: Budget Tracker
+console.log("********** Budget Tracker **********");
+function createBudgetTracker() {
+    let balance = 0;
+    return function(expense) {
+        balance -= expense;
+        console.log(`Current Balance: -$${Math.abs(balance)}`);
+    };
+}
+let budget = createBudgetTracker();
+budget(300); // "Current Balance: -$300"
+budget(200); // "Current Balance: -$500"
+
