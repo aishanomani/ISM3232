@@ -73,3 +73,12 @@ let budget = createBudgetTracker();
 budget(300); // "Current Balance: -$300"
 budget(200); // "Current Balance: -$500"
 
+// Task 8: Recursion in JavaScript
+// Scenario: Business Growth Projection
+console.log("********** Business Growth Projection **********");
+function calculateGrowth(years, revenue) {
+    if (years === 0) return `Projected Revenue: $${revenue.toFixed(2)}`;
+    return calculateGrowth(years - 1, revenue * 1.05);
+}
+console.log(calculateGrowth(8, 1000)); // "Projected Revenue: $1477.46"
+console.log(calculateGrowth(5, 5000)); // "Projected Revenue: $6381.41"
